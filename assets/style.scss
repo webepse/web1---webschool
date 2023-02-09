@@ -26,6 +26,11 @@ $font: 'Roboto';
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
+
+        @media all and (max-width: 600px)
+        {
+            flex-direction: column;
+        }
     }
 
 }
@@ -39,11 +44,29 @@ header{
         span{
             margin-right: 20px;
         }
+        #coord,#header-social{
+            @media all and (max-width: 600px)
+            {
+                width: 100%;
+                display: flex; 
+                justify-content: center;
+            }
+        }
+       
     }
 
     #myheader{
         background-color: $color2;
         line-height: 80px;
+
+        #logo{
+            @media all and (max-width: 600px)
+            {
+                width: 100%;
+                display: flex;
+                justify-content: center;
+            }
+        }
 
         nav{
             width: 40%;
@@ -57,7 +80,15 @@ header{
                         color: white;
                         text-decoration: none
                     }
+                    @media all and (max-width: 600px)
+                    {
+                        text-align: center;
+                    }
                 }
+            }
+            @media all and (max-width: 600px)
+            {
+                width: 100%;
             }
         }
     }
