@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+//font-family: 'Roboto', sans-serif;
+$color1: #630cc9;
+$color2: #7c18b0;
+$color3: #a9a9a9;
+$color4: #15d0e8;
+$color5: #35066b;
+$font: 'Roboto';
+
+.slide{
+    width: 100%;
+    min-height: 100vh;
+}
+
+.wrapper{
+    width: 85%;
+    margin: 0 auto;
+    //& fait référence à l'élement. pas enfant de 
+    #header-info &, #myheader &{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+}
+
+header{
+    color: white;
+
+    #header-info{
+        background-color: $color1;
+        line-height: 40px;
+        span{
+            margin-right: 20px;
+        }
+    }
+
+    #myheader{
+        background-color: $color2;
+        line-height: 80px;
+
+        nav{
+            width: 40%;
+            ul{
+                display: flex;
+                list-style: none;
+                li{
+                    flex: 1;
+                    text-align: right;
+                    a{
+                        color: white;
+                        text-decoration: none
+                    }
+                }
+            }
+        }
+    }
+}
+
+
