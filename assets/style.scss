@@ -230,7 +230,7 @@ header{
         justify-content: flex-end;
         align-items: center;
 
-        @media all and (max-width: 768px)
+        @media all and (max-width: 991px)
         {
             width: 100%;
             min-height: 60vh;
@@ -247,7 +247,7 @@ header{
                 background-color: silver;
                 box-shadow: 0 10px 0 $color4;
 
-                @media all and (max-width: 768px)
+                @media all and (max-width: 991px)
                 {
                   left: 0;
                 }
@@ -258,7 +258,7 @@ header{
                     position: relative;
                     left: -80px;
 
-                    @media all and (max-width: 768px)
+                    @media all and (max-width: 991px)
                     {
                       left: 0;
                     }
@@ -269,7 +269,7 @@ header{
                 margin-top: 30px;
                 position: relative;
                 left: 80px;
-                @media all and (max-width: 768px)
+                @media all and (max-width: 991px)
                 {
                   left: 0;
                 }
@@ -286,7 +286,7 @@ header{
         justify-content: center;
         align-items: center;
 
-        @media all and (max-width: 768px)
+        @media all and (max-width: 991px)
         {
             width: 100%;
             min-height: 100vh;
@@ -298,7 +298,7 @@ header{
             flex-wrap: wrap;
             justify-content: space-between;
 
-            @media all and (max-width: 768px)
+            @media all and (max-width: 991px)
             {
                 width: 90%;
             }
@@ -369,7 +369,7 @@ header{
             border-radius: 10px;
             border: solid 1px black;
 
-            @media all and (max-width: 768px)
+            @media all and (max-width: 1200px)
             {
                 width: 100%;
                 margin: 15px 0; 
