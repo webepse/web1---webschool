@@ -218,6 +218,79 @@ header{
 
 }
 
+#contact{
+    display: flex;
+    flex-wrap: wrap;
+
+    .gauche{
+        width: 40%;
+        background-color: $color2;
+        min-height: 100vh;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+
+        @media all and (max-width: 768px)
+        {
+            width: 100%;
+            min-height: 60vh;
+            justify-content: center;
+        }
+
+        .infos{
+            width: 80%;
+
+            #mycontact{
+                position: relative;
+                left: 100px;
+                padding: 30px;
+                background-color: silver;
+                box-shadow: 0 10px 0 $color4;
+
+                @media all and (max-width: 768px)
+                {
+                  left: 0;
+                }
+
+                h3{
+                    margin-bottom: 30px;
+                    font-size: 2em;
+                    position: relative;
+                    left: -80px;
+
+                    @media all and (max-width: 768px)
+                    {
+                      left: 0;
+                    }
+                }
+            }
+
+            #mysocial{
+                margin-top: 30px;
+                position: relative;
+                left: 80px;
+                @media all and (max-width: 768px)
+                {
+                  left: 0;
+                }
+            }
+
+        }
+    }
+
+    .droite{
+        width: 60%;
+        background-color: $color1;
+        min-height: 100vh;
+
+        @media all and (max-width: 768px)
+        {
+            width: 100%;
+            min-height: 100vh;
+        }
+    }
+}
+
 
 
 
