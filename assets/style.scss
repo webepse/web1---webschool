@@ -298,6 +298,11 @@ header{
             flex-wrap: wrap;
             justify-content: space-between;
 
+            @media all and (max-width: 768px)
+            {
+                width: 90%;
+            }
+
             h4{
                 width: 100%;
                 margin-bottom: 15px;
@@ -363,6 +368,13 @@ header{
             padding: 15px;
             border-radius: 10px;
             border: solid 1px black;
+
+            @media all and (max-width: 768px)
+            {
+                width: 100%;
+                margin: 15px 0; 
+            }
+
         }
         
         .form-group{
