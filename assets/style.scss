@@ -282,13 +282,116 @@ header{
         width: 60%;
         background-color: $color1;
         min-height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
 
         @media all and (max-width: 768px)
         {
             width: 100%;
             min-height: 100vh;
         }
+
+        form{
+            width: 60%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+
+            h4{
+                width: 100%;
+                margin-bottom: 15px;
+            }
+            label{
+                display: block; // inline de base, vu qu'on veut un retour à la ligne -> block
+                color: silver;
+            }
+
+            input, textarea{
+                background-color: transparent;
+                border: none;
+                color: white;
+                margin-top: 5px;
+                font-size: 1.2em;
+                font-family: $font;
+            }
+
+            input:focus, textarea:focus{
+                outline: none;
+            }
+
+            label[for=newsletter]{
+                display: inline-block;
+                margin-left: 10px;
+            }
+
+            input[type=submit]
+            {
+                background-color: $color4;
+                border: none;
+                padding: 5px 20px;
+                color: black;
+                font-weight: 900;
+                border-radius: 10px;
+                cursor: pointer;
+            }
+
+            input[type=checkbox]
+            {
+                width: 30px;
+                height: 30px;
+                background-color: transparent;
+                border: solid 1px black;
+                accent-color: $color2;
+                appearance: none;
+                margin-top: 0;
+
+                &:checked{
+                    appearance: auto;
+                }
+            }
+
+            textarea{
+                width: 100%;
+                height: 300px;
+                resize: none;
+            }
+        }
+
+        .form-group1{
+            width: 42%;
+            padding: 15px;
+            border-radius: 10px;
+            border: solid 1px black;
+        }
+        
+        .form-group{
+            width: 100%;
+            padding: 15px;
+            border-radius: 10px;
+            border: solid 1px black;
+            margin: 15px 0;
+        }
+
+        .group{
+            display: flex;
+            height: 40px;
+            align-items: center;
+        }
+
     }
+}
+
+footer{
+    width: 100%;
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: 900;
+    font-size: 2em;
+    background-color: $color5;
 }
 
 
